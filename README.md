@@ -10,7 +10,7 @@
 	git init
 
 #Clone the required github repository 
-	git clone https:github.com/cnk-digital-solutions/exercise5
+	git clone https://github.com/fruAUSTIN/exercise5.git
 
 #Set exercise5 as working directory 
 	cd exercise5
