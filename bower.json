@@ -1,0 +1,13 @@
+{
+  "name": "origami-test",
+  "private": true,
+  "dependencies": {
+    "o-grid": "^4.3.7",
+    "o-hierarchical-nav": "^5.0.5",
+    "o-fonts": "^3.0.4",
+    "o-typography ": "^5.5.0",
+    "o-tabs": "^4.0.4",
+    "o-colors": "^4.1.5",
+    "o-gallery": "^3.0.3"
+  }
+}

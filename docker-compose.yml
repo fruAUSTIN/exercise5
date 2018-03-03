@@ -1,0 +1,5 @@
+origami:
+ build: .
+ dockerfile: Dockerfile
+ volumes:
+  - ".:/app:rw"
