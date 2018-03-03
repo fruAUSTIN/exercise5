@@ -1,0 +1,15 @@
+{
+	"name": "o-tabs",
+	"main": [
+		"main.scss",
+		"main.js"
+	],
+	"ignore": [
+		".gitignore"
+	],
+	"dependencies": {
+		"o-colors": "^4.0.2",
+		"o-buttons": "^5.0.0",
+		"o-dom": "^2.0.3"
+	}
+}

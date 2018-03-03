@@ -1,0 +1,68 @@
+{
+	"description": "Tabs component for dividing content into meaningful sections.",
+	"origamiType": "module",
+	"origamiCategory": "components",
+	"origamiVersion": 1,
+	"support": "https://github.com/Financial-Times/o-tabs/issues",
+	"supportContact": {
+		"email": "origami.support@ft.com",
+		"slack": "financialtimes/ft-origami"
+	},
+	"supportStatus": "active",
+	"browserFeatures": {
+		"required": [
+			"queryselector",
+			"addeventlistener",
+			"classlist",
+			"String.prototype.trim"
+		],
+		"optional": [
+			"domcontentready",
+			"customevent"
+		]
+	},
+	"ci": {
+		"circle": "https://circleci.com/api/v1/project/Financial-Times/o-tabs"
+	},
+	"demosDefaults": {
+		"js": "demos/src/demo.js",
+		"sass": "demos/src/demo.scss",
+		"documentClasses": "o-hoverable-on"
+	},
+	"demos": [
+		{
+			"name": "base-style",
+			"template": "demos/src/base-style.mustache",
+			"hidden": true,
+			"description": ""
+		},
+		{
+			"name": "buttontabs",
+			"template": "demos/src/buttontabs.mustache",
+			"description": ""
+		},
+		{
+			"name": "buttontabs-big",
+			"template": "demos/src/buttontabs-big.mustache",
+			"description": ""
+		},
+		{
+			"name": "buttontabs-primary",
+			"template": "demos/src/buttontabs-primary.mustache",
+			"description": "",
+			"hidden": true
+		},
+		{
+			"name": "buttontabs-inverse",
+			"template": "demos/src/buttontabs-inverse.mustache",
+			"description": "",
+			"hidden": true
+		},
+		{
+			"name": "pa11y",
+			"template": "demos/src/pa11y.mustache",
+			"description": "",
+			"hidden": true
+		}
+	]
+}

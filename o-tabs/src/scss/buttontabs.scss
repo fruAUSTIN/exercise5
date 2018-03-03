@@ -1,0 +1,51 @@
+@mixin oTabsButtonTabs() {
+	.o-tabs--buttontabs[data-o-tabs--js] {
+		&[role=tablist] {
+			border-bottom: 1px solid oColorsGetColorFor(o-buttons-secondary-normal, border);
+			font-size: 0; // Hack to remove the spacing between tabs when using <li>'s
+		}
+
+		[role=tab] {
+			@include oButtons;
+		}
+
+		&.o-tabs--big [role=tab] {
+			@include oButtonsSize('big');
+		}
+
+		[role=tab],
+		&.o-tabs--big [role=tab] {
+			border-bottom-width: 0;
+
+			& + [role=tab] {
+				margin-left: 0;
+				border-left-width: 0;
+			}
+
+			&[aria-selected=true] a {
+				font-weight: normal; // reset weight set in the base styles
+			}
+
+			&:first-child {
+				border-left-width: 1px;
+			}
+		}
+	}
+}
+
+@mixin oTabsButtonTabsTheme($theme) {
+	.o-tabs--#{$theme} {
+		@if map-has-key($o-buttons-themes, $theme) {
+			&.o-tabs--buttontabs.o-tabs--#{$theme} [role=tab] {
+				@include oButtonsTheme($theme);
+			}
+
+			$buttonBackground: oColorsGetColorFor(o-buttons-#{$theme}-normal, background);
+			$border: oColorsGetColorFor(o-buttons-#{$theme}-normal, border, $options: (default: $buttonBackground));
+
+			&.o-tabs--buttontabs[data-o-tabs--js][role=tablist] {
+				border-bottom: 1px solid $border;
+			}
+		}
+	}
+}
