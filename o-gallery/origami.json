@@ -1,0 +1,43 @@
+{
+	"description": "Slideshow gallery component",
+	"origamiType": "module",
+	"origamiCategory": "components",
+	"origamiVersion": 1,
+	"support": "https://github.com/Financial-Times/o-gallery/issues",
+	"supportContact": {
+		"email": "origami.support@ft.com",
+		"slack": "financialtimes/ft-origami"
+	},
+	"supportStatus": "active",
+	"browserFeatures": {
+		"required": [
+			"queryselector",
+			"css-boxsizing",
+			"addeventlistener",
+			"classList",
+			"matches"
+		],
+		"optional": [
+			"csstransforms",
+			"csstransforms3d",
+			"csstransitions",
+			"customevent"
+		]
+	},
+	"ci": {
+		"circle": "https://circleci.com/api/v1/project/Financial-Times/o-gallery"
+	},
+	"demosDefaults": {
+		"sass": "demos/src/demo.scss",
+		"js": "demos/src/declarative.js",
+		"data": "demos/src/data.json",
+		"dependencies": ["o-fonts@^3.0.0"]
+	},
+	"demos": [
+		{
+			"name": "base",
+			"template": "demos/src/base.mustache",
+			"description": ""
+		}
+	]
+}
