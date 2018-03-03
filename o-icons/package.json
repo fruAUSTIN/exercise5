@@ -1,0 +1,11 @@
+{
+  "name": "o-icons",
+  "private": true,
+  "engines": {
+    "node": "^6"
+  },
+  "devDependencies": {
+    "@financial-times/origami-image-set-tools": "^1.2.0",
+    "gulp": "^3.9.1"
+  }
+}
