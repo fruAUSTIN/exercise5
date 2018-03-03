@@ -1,0 +1,50 @@
+{
+	"description": "Responsive hierarchical nav",
+	"origamiType": "module",
+	"origamiCategory": "components",
+	"origamiVersion": 1,
+	"support": "https://github.com/Financial-Times/o-hierarchical-nav/issues",
+	"supportContact": {
+		"email": "origami.support@ft.com",
+		"slack": "financialtimes/ft-origami"
+	},
+	"supportStatus": "active",
+	"browserFeatures": {
+		"required": [
+			"classlist",
+			"createevent",
+			"~html5-elements"
+		],
+		"optional": [
+			"datauri",
+			"cssgradients",
+			"mediaqueries",
+			"csstransitions"
+		]
+	},
+	"ci": {
+		"circle": "https://circleci.com/api/v1/project/Financial-Times/o-hierarchical-nav"
+	},
+	"demosDefaults": {
+		"sass": "demos/src/scss/demo.scss",
+		"js": "demos/src/js/responsive-nav.js",
+		"dependencies": "o-fonts@^3.0.0,o-normalise@^1.0.0"
+	},
+	"demos": [
+		{
+			"name": "nav",
+			"template": "demos/src/nav.mustache",
+			"description": "A responsive multi-level menu for site navigation"
+		},
+		{
+			"name": "responsive-nav",
+			"template": "demos/src/responsive-nav.mustache",
+			"description": "A demo responsive layout where the navigation is hidden behind a single item at a narrow screen width"
+		},
+		{
+			"name": "mega-dropdown",
+			"template": "demos/src/mega-dropdown.mustache",
+			"description": "A mega dropdown menu for sites with a large tree-like navigation"
+		}
+	]
+}

@@ -1,0 +1,61 @@
+.o-hierarchical-nav {
+	white-space: nowrap;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+
+		[aria-hidden=true] {
+			display: none !important; // sass-lint:disable-line no-important
+		}
+	}
+
+	a {
+		text-decoration: none;
+		cursor: pointer;
+		color: oColorsGetPaletteColor('white');
+
+		// Prevent accidental double clicks and long taps from selecting text
+		// sass-lint:disable no-vendor-prefixes
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+		// sass-lint:enable no-vendor-prefixes
+	}
+}
+
+// Styles for all hierarchical levels
+[data-o-hierarchical-nav-level] {
+	li {
+		position: relative;
+
+		> ul {
+			display: none;
+		}
+
+		&[aria-expanded='true'] > ul {
+			display: block;
+		}
+	}
+}
+
+[data-o-hierarchical-nav-level='1'] > a {
+	text-transform: uppercase;
+}
+
+// Styles for parents of other navs or controlled elements
+.o-hierarchical-nav [aria-controls] > a,
+.o-hierarchical-nav__parent > a {
+	// sass-lint:disable SelectorDepth -- not supported by sass-lint
+	i {
+		@include oIconsGetIcon('arrow-down', oColorsGetPaletteColor('white'), $_o-hierachical-nav-icon-size, $_o-hierachical-nav-icon-size, $iconset-version: 1);
+		padding-right: 3px;
+		vertical-align: middle;
+	}
+
+	&:focus i,
+	#{$o-hoverable-if-hover-enabled} &:hover i {
+		@include oIconsGetIcon('arrow-down', oColorsGetPaletteColor('white'), $_o-hierachical-nav-icon-size, $apply-base-styles: false, $iconset-version: 1);
+	}
+}
