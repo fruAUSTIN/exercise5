@@ -1,0 +1,43 @@
+{
+	"description": "A horizontal list of elements that 'squishes' down, lowest priority first.",
+	"origamiType": "module",
+	"origamiCategory": "components",
+	"origamiVersion": 1,
+	"support": "https://github.com/Financial-Times/o-squishy-list/issues",
+	"supportContact": {
+		"email": "origami.support@ft.com",
+		"slack": "financialtimes/ft-origami"
+	},
+	"supportStatus": "active",
+	"browserFeatures": {
+		"required": [
+				"createevent"
+		],
+		"optional": []
+	},
+	"ci": {
+		"circle": "https://circleci.com/api/v1/project/Financial-Times/o-squishy-list"
+	},
+	"demosDefaults": {
+		"sass": "demos/src/demo.scss",
+		"js": "demos/src/demo.js"
+	},
+	"demos": [
+		{
+			"name": "without-more",
+			"template": "demos/src/without-more.mustache",
+			"description": ""
+		},
+		{
+			"name": "with-more",
+			"template": "demos/src/with-more.mustache",
+			"description": ""
+		},
+		{
+			"name": "pa11y",
+			"hidden": true,
+			"template": "demos/src/pa11y.mustache",
+			"description": ""
+		}
+	]
+}
