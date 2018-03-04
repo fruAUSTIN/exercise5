@@ -51,9 +51,11 @@
 	docker-compose run –-rm origami/app/node_modules/.bin?obt install
 
 #Open the client folder 
+	
 	open client
 
 #Import o-gallery 
+	
 	@import 'o-gallery/main';
 
 #Compile contents of client/main.js and client/main.scss into client folder 
