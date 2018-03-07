@@ -67,3 +67,5 @@
 	open public
 
 #Open index.html in a browser
+
+#Late update to the gallery to make the slider work
